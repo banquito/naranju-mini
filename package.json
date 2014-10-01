@@ -1,0 +1,13 @@
+{
+  "name": "naranju",
+  "version": "0.3.1",
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "stylus": "~0.42.0",
+    "nib": "~1.0.2",
+    "jeet": "~5.3.0",
+    "grunt-contrib-stylus": "~0.13.2",
+    "grunt-contrib-watch": "~0.5.3",
+    "rupture": "~0.2.0"
+  }
+}
