@@ -1,4 +1,8 @@
-flash()
+flash-skin($color = #a5c8e5)
+  border-color: $color
+  color: $color
+  
+.flash
   position: relative
   padding: 15px 20px
   background: white
@@ -7,6 +11,10 @@ flash()
   border-radius: 3px
   color: #a5c8e5
   margin-bottom: 1em
-flash-skin($color = #a5c8e5)
-  border-color: $color
-  color: $color
+  &--warning
+    flash-skin(#f3a641)
+  &--success
+    flash-skin(#aece4e)
+  &--error
+    flash-skin(#e77755)
+    
