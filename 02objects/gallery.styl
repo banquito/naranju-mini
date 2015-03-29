@@ -1,15 +1,72 @@
-/* gallery */
+/* 
+
+gallery 
+=======
+
+jade:
+-----
+
+ul.gallery.gallery2
+  li.gallery__item
+    img.gallery__img(src="file_path")
+  li.gallery__item
+    img.gallery__img(src="file_path")
+  li.gallery__item
+    img.gallery__img(src="file_path")
+  li.gallery__item
+    img.gallery__img(src="file_path")
+    
+html:
+-----
+
+<ul class="gallery gallery2">
+  <li class="gallery__item">
+    <img src="file_path" class="gallery__img">
+  </li>
+  <li class="gallery__item">
+    <img src="file_path" class="gallery__img">
+  </li>
+  <li class="gallery__item">
+    <img src="file_path" class="gallery__img">
+  </li>
+  <li class="gallery__item">
+    <img src="file_path" class="gallery__img">
+  </li>
+</div>
+
+*/
 
 gallery($column = 4)
-  padding: 0 0 10px; 
-  clearfix(); 
   margin:0; 
   list-style:none;
+  clearfix(); 
   .gallery__item 
-    float: left; 
-    padding: 0 1% 1% 0; 
-    box-sizing: border-box; 
-    width: (100%/$column);
-	.gallery__img
+    column(1/$column, cycle: $column )
+    margin-bottom: 3%;
+  .gallery__img
       display: block; 
       width:100%;
+
+if $use-gallery
+  .gallery2
+    gallery(2)
+  .gallery3 
+    gallery(3)
+  .gallery4 
+    gallery(4)
+  .gallery5 
+    gallery(5)
+  .gallery6  
+    gallery(6)
+  .gallery7  
+    gallery(7)
+  .gallery8  
+    gallery(8)
+  .gallery9  
+    gallery(9)
+  .gallery10 
+    gallery(10)
+  .gallery11 
+    gallery(11)
+  .gallery12 
+    gallery(12)

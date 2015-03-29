@@ -1,20 +1,41 @@
-flash-skin($color = #a5c8e5)
-  border-color: $color
+/*
+
+flash
+=====
+
+jade:
+-----
+
+.flash Este es un mensaje de notificación
+
+.flash.flash--warning Este es un mensaje de peligro
+
+.flash.flash--success Este es un mensaje de éxito
+
+.flash.flash--warning Este es un mensaje de error
+
+html:
+-----
+
+<div class="flash flash--warning">
+  Este es un mensaje de peligro
+</div>
+
+*/
+
+flash-skin($color = $noticeColor)
+  border:1px solid $color
   color: $color
+  background: lighten($color, 80%)
   
-.flash
-  position: relative
-  padding: 15px 20px
-  background: white
-  color: #999999
-  border: 1px solid #a5c8e5
-  border-radius: 3px
-  color: #a5c8e5
-  margin-bottom: 1em
-  &--warning
-    flash-skin(#f3a641)
-  &--success
-    flash-skin(#aece4e)
-  &--error
-    flash-skin(#e77755)
-    
+if $use-flashes
+  .flash
+    padding: 15px 20px
+    margin: 1em 0
+    flash-skin()
+    &--warning
+      flash-skin($warningColor)
+    &--success
+      flash-skin($successColor)
+    &--error
+      flash-skin($errorColor)

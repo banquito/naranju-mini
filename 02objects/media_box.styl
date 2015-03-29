@@ -1,6 +1,6 @@
 /* user */
 
-user_box()
+media_box()
   background darken(#5c5c5c, 15%)
   padding 1em
   border-bottom 1px solid #696969
@@ -25,3 +25,8 @@ user_box()
       &:hover
         text-decoration none
         color #ddd
+
+if $use-media-box   
+  .media-box  
+    media_box()
+
