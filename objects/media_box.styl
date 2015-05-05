@@ -1,0 +1,42 @@
+/* 
+
+media-box 
+=======
+
+jade:
+-----
+
+div.media-box
+  figure.media-box__image
+    img(src="file_path")
+  h4.media-box__title Lorem ipsum
+  p.media-box__content Dolor sit amet etien bid amet
+  
+    
+html:
+-----
+
+<div class="media-box">
+  <figure class="media-box__image">
+    <img src="file_path">
+  </figure>
+  <h4 class="media-box__title"> Lorem ipsum<h4>
+  <p class="media-box__content"> Dolor sit amet etien bid amet</p>
+</div>
+
+*/
+
+if $use-media-box   
+  .media-box
+    cf()
+    padding 1em
+    &__image
+      float left
+      margin 0 1em 0 0
+      display block
+      img 
+        display block
+    &__title
+      margin 0
+    &__content
+      margin 0
