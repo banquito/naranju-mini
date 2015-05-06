@@ -45,7 +45,7 @@ html:
 gallery($column = 4, $gutter = 3)
   .gallery__item 
     column(1/$column, cycle: $column, gutter: $gutter )
-    margin-bottom: $gutter;
+    margin-bottom: $gutter * 1%;
 
 if $use-gallery
   .gallery
