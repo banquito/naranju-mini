@@ -6,6 +6,9 @@ $textColor = #7F655A
 $titleColor = #E54000
 $lineColor = #E54000
 
+$titleColorLight = lighten($titleColor, 15%)
+$titleColorDark = darken($titleColor, 15%)
+  
 $titleFont = 'Open Sans', Helvetica, Arial, sans-serif
 $textFont = 'Open Sans', Helvetica, Arial, sans-serif
 
@@ -19,6 +22,10 @@ $successColor  = #458746
 
 $media = '../'
 
+/* jeet */
+
+jeet.max-width = 960px
+
 /* rupture scale */
 
 rupture.scale = 0 400px 600px 800px 1050px
@@ -26,6 +33,7 @@ rupture.anti-overlap = -1px
 
 /* add objects */
 
+$use-debug      = false
 $use-reset      = true
 $use-font       = true
 $use-breadcrumb = true
