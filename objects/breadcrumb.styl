@@ -40,31 +40,31 @@ if $use-breadcrumb
     content:"\002F" "\00A0"
 
 
-/*
+  /*
 
-breadcrumb by data attribute
-============================
+  breadcrumb by data attribute
+  ============================
 
-jade:
------
+  jade:
+  -----
 
-ol.breadcrumb
-  li(data-breadcrumb="|"): a(href="#") Home
-  li(data-breadcrumb="|"): a(href="#") About
-  li(data-breadcrumb="|"): a(href="#") The Board
-  li(data-breadcrumb="|"): a(href="#") Directors
-  
-html:
------
+  ol.breadcrumb
+    li(data-breadcrumb="|"): a(href="#") Home
+    li(data-breadcrumb="|"): a(href="#") About
+    li(data-breadcrumb="|"): a(href="#") The Board
+    li(data-breadcrumb="|"): a(href="#") Directors
+    
+  html:
+  -----
 
-<ol class="breadcrumb">
-  <li><a href=#>Home</a></li>
-  <li data-breadcrumb="|"><a href=#>About</a></li>
-  <li data-breadcrumb="|"><a href=#>The Board</a></li>
-  <li data-breadcrumb="|" class=current><a href=#>Directors</a></li>
-</ol>
+  <ol class="breadcrumb">
+    <li><a href=#>Home</a></li>
+    <li data-breadcrumb="|"><a href=#>About</a></li>
+    <li data-breadcrumb="|"><a href=#>The Board</a></li>
+    <li data-breadcrumb="|" class=current><a href=#>Directors</a></li>
+  </ol>
 
-*/
+  */
 
   .breadcrumb > li + li[data-breadcrumb]:before
     content:attr(data-breadcrumb) "\00A0"

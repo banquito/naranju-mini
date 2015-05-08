@@ -2,12 +2,12 @@
   "name": "naranju-mini",
   "version": "0.5.0",
   "devDependencies": {
-    "grunt": "~0.4.5",
-    "stylus": "~0.50.0",
-    "nib": "~1.1.0",
-    "jeet": "~6.1.2",
-    "grunt-contrib-stylus": "~0.20.0",
-    "grunt-contrib-watch": "~0.6.1",
-    "rupture": "~0.6.1"
+    "grunt": "^0.4.5",
+    "stylus": "^0.50.0",
+    "nib": "^1.1.0",
+    "jeet": "^6.1.2",
+    "grunt-contrib-stylus": "^0.20.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "rupture": "^0.6.1"
   }
 }
